@@ -9,21 +9,15 @@ import { Image } from "astro:assets";
         <slot />
       </div>
     </div>
-    <div class="absolute left-0 md1:top-0 bottom-0 -z-[1]">
-      <Image
-        src="/assets/img/elements/breadcrumb-shape-1.svg"
-        alt="hero-shape-1"
-        width="291"
-        height="380"
-      />
-    </div>
-    <div class="absolute bottom-0 right-0 -z-[1]">
-      <Image
-        src="/assets/img/elements/breadcrumb-shape-2.svg"
-        alt="hero-shape-2"
-        width="291"
-        height="380"
-      />
+    <div class="absolute left-0 md1:top-0 bottom-0 -z-[1] p-4">
+      <a href="/">
+        <Image
+          src="/assets/img/THAT-Full-Wide.svg"
+          alt="hero-shape-1"
+          width="200"
+          height="260"
+        />
+      </a>
     </div>
   </div>
 </section>

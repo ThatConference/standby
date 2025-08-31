@@ -22,7 +22,7 @@ const uniqueCategories: any = new Set(Categories);
       {
         Array.from(uniqueCategories, (category: string) => (
           <li class="border-b border-ColorBlack/10 pb-[14px] pt-[14px] first:pt-0 last:border-b-0 last:pb-0">
-            <button class="hover:text-ColorCaribbeanGreen">
+            <button class="hover:text-ColorThatRed">
               {category} {"("}
               {
                 blogs.filter((blog: any) => {
@@ -72,14 +72,14 @@ const uniqueCategories: any = new Set(Categories);
               <div class="flex w-full flex-col gap-y-3 sm:w-auto sm:flex-1">
                 <a
                   href={`/blog/${slug(title)}`}
-                  class="flex items-center gap-[10px] text-sm hover:text-ColorCaribbeanGreen"
+                  class="flex items-center gap-[10px] text-sm hover:text-ColorThatRed"
                 >
                   <i class="fa-regular fa-calendar" />
                   {date}
                 </a>
                 <a
                   href={`/blog/${slug(title)}`}
-                  class="line-clamp-2 text-base font-semibold text-ColorBlack hover:text-ColorCaribbeanGreen"
+                  class="line-clamp-2 text-base font-semibold text-ColorBlack hover:text-ColorThatRed"
                 >
                   {title}
                 </a>
