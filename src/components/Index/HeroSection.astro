@@ -8,7 +8,7 @@ const { header, description, image, buttonLeft, buttonRight, BelowText, headerLi
 
 <section class="section-hero">
   <div
-    class="relative z-10 overflow-hidden rounded-bl-[30px] rounded-br-[30px] bg-ColorHeroBg md:rounded-bl-[50px] md:rounded-br-[50px] xl:rounded-bl-[100px] xl:rounded-br-[100px]"
+    class="relative z-10 overflow-hidden rounded-bl-[30px] rounded-br-[30px] bg-white md:rounded-bl-[50px] md:rounded-br-[50px] xl:rounded-bl-[100px] xl:rounded-br-[100px]"
   >
     <div class="pt-28 md:pt-36 lg:pt-[150px] xxl:pt-[185px]">
       <div class="container-default">
@@ -17,13 +17,15 @@ const { header, description, image, buttonLeft, buttonRight, BelowText, headerLi
             <div
               class="jos mx-auto mb-6 max-w-xl lg:max-w-2xl xl:max-w-3xl xxl:max-w-[1076px]"
             >
-              <h1
-                class="mb-6 font-Kanit text-[40px] font-medium leading-none -tracking-[1px] text-[#010D09] sm:text-5xl lg:text-6xl xl:text-[76px] xxl:text-[110px]"
-              >
-                {header}
-                <br />
-                <span class="text-ColorCaribbeanGreen">{headerLineTwo}</span>
-              </h1>
+              <div class="mb-6 flex justify-center">
+                <Image
+                  src="/assets/img/Trees-Solid.svg"
+                  alt="Trees Solid"
+                  width="400"
+                  height="200"
+                  class="h-auto w-full max-w-md"
+                />
+              </div>
             </div>
             <div
               class="jos mx-auto mb-8 max-w-xl lg:mb-[50px] lg:max-w-2xl xl:max-w-3xl xxl:max-w-[896px]"
@@ -49,32 +51,11 @@ const { header, description, image, buttonLeft, buttonRight, BelowText, headerLi
                 ><span>{buttonRight?.text}</span></a
               >
             </div>
-            <div class="mb-10 lg:mb-[60xp] xl:mb-20">
-              <span class="text-sm text-black">{BelowText}</span>
-            </div>
+            
           </div>
-          <div
-            class="relative mx-auto max-w-[1076px] rounded-tl-[10px] rounded-tr-[10px]"
-          >
-            <Image
-              src={image}
-              alt="hero-dashboard"
-              width="1076"
-              height="563"
-              data-jos_animation="zoom-in-down"
-            />
-          </div>
+          
         </div>
       </div>
-    </div>
-    <div class="absolute left-0 top-0 -z-10 h-auto w-full">
-      <Image
-        src="/assets/img/elements/hero-10-bg-shape.svg"
-        alt="hero-10-bg-shape"
-        width="1600"
-        height="650"
-        class="h-auto w-full"
-      />
     </div>
   </div>
 </section>
