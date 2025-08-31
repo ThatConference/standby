@@ -44,6 +44,8 @@
   --color-ColorHoneySuckle: #e9ff97;
   --color-ColorTest: #7CC4B2;
   --color-ColorHeroBg: #CCE5E0;
+  --colorColorThatNavy: #26529a;
+  --colorColorThatRed: #f74646;
 }
 
 /*
@@ -113,6 +115,10 @@
 
 @utility is-atomic-tangerine {
   @apply border-ColorAtomicTangerine bg-ColorAtomicTangerine text-black hover:bg-white;
+}
+
+@utility is-that-navy {
+  @apply border-[var(--colorColorThatNavy)] bg-[var(--colorColorThatNavy)] text-white hover:bg-transparent hover:border-[var(--colorColorThatNavy)] hover:text-[var(--colorColorThatNavy)];
 }
 
 @utility is-lime {
